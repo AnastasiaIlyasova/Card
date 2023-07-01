@@ -32,6 +32,7 @@ html,body{
 }
 body{
 	overflow-x:hidden;
+	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 input,button,textarea{font-family:inherit;}
