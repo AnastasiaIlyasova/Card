@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="tingle.min.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.16.0/tingle.min.js"></script>
+
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Montserrat:wght@300;500;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
 <body>
  <header>
@@ -128,37 +129,37 @@
    <div class="grid">
     <div class="grid__body">
      <div class="grid__item">
-       <div id="open-img-macbook" class="works__image"href="#">
+       <div id="open-img-macbook" class="works__image">
          <img src="img/MacBook.jpg" alt="">
          <p class="works__name">Agency Template</p>
        </div>
      </div>
      <div class="grid__item">
-        <div id="open-img-nature" class="works__image"href="#">
+        <div id="open-img-nature" class="works__image">
         <img src="img/nature.jpg" alt="">
         <p class="works__name">Life Style Blog Template</p>
        </div>
      </div>
      <div class="grid__item">
-       <div id="open-img-saas" class="works__image"href="#">
+       <div id="open-img-saas" class="works__image">
       <img src="img/saas.jpg" alt="">
        <p class="works__name">Saas Landing Page</p>
        </div>
      </div>
      <div class="grid__item">
-        <div id="open-img-lucas" class="works__image"href="#">
+        <div id="open-img-lucas" class="works__image">
         <img src="img/portfolio.jpg" alt="">
         <p class="works__name">Lucas Portfolio Template</p>
        </div>
      </div>
      <div class="grid__item">
-          <div id="open-img-serene" class="works__image"href="#">
+          <div id="open-img-serene" class="works__image">
         <img src="img/serene.jpg" alt="">
         <p class="works__name">Serene Product Template</p>
        </div>
      </div>
      <div class="grid__item">
-         <div id="open-img-sanja" class="works__image"href="#">
+         <div id="open-img-sanja" class="works__image">
         <img  src="img/sanja.jpg" alt="">
         <p class="works__name">Sanja eCommerce Template</p>
        </div>
@@ -293,88 +294,5 @@
   </div>
   </footer>
 </body>
- <script>
-//Modal window
-let openImgSerene = document.getElementById("open-img-serene")
-let openImgSanja = document.getElementById("open-img-sanja")
-let openImgLucas = document.getElementById("open-img-lucas")
-let openImgSaas = document.getElementById("open-img-saas")
-let openImgNature = document.getElementById("open-img-nature")
-let openImgMacbook = document.getElementById("open-img-macbook")
-
-var modal = new tingle.modal({
-    footer: true,
-    stickyFooter: false,
-    closeMethods: ['overlay', 'button', 'escape'],
-    closeLabel: "Close",
-    cssClass: ['custom-class-1', 'custom-class-2'],
-    onOpen: function() {
-        console.log('modal open');
-    },
-    onClose: function() {
-        console.log('modal closed');
-    },
-    beforeClose: function() {
-        return true; // close the modal
-        return false; // nothing happens
-    }
-});
-
-openImgSerene.addEventListener('click', function(){
-  modal.setContent('<img src="img/serene.jpg" alt="">');
-  modal.open()
-})
-
-openImgSanja.addEventListener('click', function(){
-  modal.setContent('<img src="img/sanja.jpg"  alt="">');
-  modal.open()
-})
-
-openImgLucas.addEventListener('click', function(){
-  modal.setContent('<img src="img/portfolio.jpg"  alt="">');
-  modal.open()
-})
-
-openImgSaas.addEventListener('click', function(){
-  modal.setContent('<img src="img/saas.jpg"  alt="">');
-  modal.open()
-})
-
-openImgNature.addEventListener('click', function(){
-  modal.setContent('<img src="img/nature.jpg"  alt="">');
-  modal.open()
-})
-
-openImgMacbook.addEventListener('click', function(){
-  modal.setContent('<img src="img/MacBook.jpg" alt="">');
-  modal.open()
-})
-
-
-  modal.addFooterBtn('Close', 'tingle-btn tingle-btn--primary', function() {
-    modal.close()
-})
-
-//Adaptive
-window.addEventListener('resize', move);
-
-function move(){
-  const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if (viewport_width <= 1040) {
-document.getElementById("awards").innerHTML = "Awards <br> & <br> Recognitions";
-  } 
-  else{
-    document.getElementById("awards").innerHTML = "Awards&Recognitions";
-  }
-}
-move();
-
-//Menu-burger
-let burgerClick = document.getElementById("burger-click")
-let menuAdaptive = document.getElementById("menu-adaptive")
-burgerClick.addEventListener('click', function(e){
-  menuAdaptive.classList.toggle('menu__active')
-})
-
-</script>
+  <script src="index.js"></script>
 </html>
