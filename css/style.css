@@ -31,7 +31,6 @@ html,body{
 	 overflow-x:hidden;
 }
 body{
-	overflow-x:hidden;
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
@@ -86,13 +85,13 @@ header{
 	justify-content: space-between;
 }
 .name{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 2rem;
 	color: black;
 	margin-right: 0.5rem;
 }
 .profession{
-	font-family: 'Arapey', serif;
+	font-family: 'Arapey', 'Arial', serif;
 	font-size: 1.5rem;
 	color: black;
 	text-transform: uppercase;
@@ -124,7 +123,7 @@ header{
 }
 .flex_second-item{
 	display: flex;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Open Sans', 'Arial', sans-serif;
 	align-items: flex-end;
 }
 @media(max-width: 1202px){
@@ -175,7 +174,7 @@ header{
 	}
 }
 h1{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-weight: 800;
 	font-size: 5rem;
 	color: black;
@@ -183,7 +182,7 @@ h1{
 }
 .info__text__about{
 	padding-top: 2rem;
-	font-family: 'Arapey', serif;
+	font-family: 'Arapey', 'Arial', serif;
 	font-size: 2rem;
 	color: black;
 }
@@ -202,7 +201,7 @@ h1{
 }
 
 .advantages{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	text-transform: uppercase;
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -243,7 +242,7 @@ h1{
 	flex: 0 1 50%;
 }
 .h2-advantages{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 3.5rem;
 	font-weight: 800;
 	line-height: 75px;
@@ -256,7 +255,7 @@ h1{
 }
 
 .describe{
-	font-family: 'Arapey', serif;
+	font-family: 'Arapey', 'Arial', serif;
 	font-size: 1.5rem;
 	color: black;
 	text-transform: none;
@@ -265,7 +264,7 @@ h1{
 	flex: 0 1 50%;
 }
 .details{
-	font-family: 'Arapey', serif;
+	font-family: 'Arapey', 'Arial', serif;
 	font-size: 1.5rem;
 	color: black;
 	text-transform: none;
@@ -451,7 +450,7 @@ justify-content: space-around;
 
 }
 .info__text__about__edu{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', 'Arial', sans-serif;
 font-weight: 600;
 font-size: 28px;
 line-height: 27px;
