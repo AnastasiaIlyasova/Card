@@ -194,10 +194,24 @@ h1{
 .skills{
 	margin-right: 3rem;
 }
+
+@media (max-width: 320px) {
+	.skills{
+		margin-right: 0;
+	}
+}
+
 .skills-awards{
 	margin-top: 8rem;
 	display: flex;
 	justify-content: space-between;
+}
+
+@media(max-width: 320px) {
+	.skills-awards{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .advantages{
@@ -220,7 +234,8 @@ h1{
 }
 @media(max-width: 370px){
 	.advantages{
-		font-size: 1rem;
+		font-size: 2rem;
+		text-align: center;
 	}
 }
 .awards{
@@ -277,37 +292,20 @@ h1{
 	background: rgba(204, 204, 204, 1);
 	position: relative;
 	margin-bottom: 16px;
+	text-align: left;
 }
-.photoshop__bar{
+
+@media(max-width: 320px)  {
+	.skills__bar{
+		width: 66vw;
+	}
+}
+.current__bar{
 	height: 100%;
-	width: 30%;
 	position: absolute;
 	background: #6665ee;
 }
-.illustrator__bar{
-	height: 100%;
-	width: 10%;
-	position: absolute;
-	background: #6665ee;
-}
-.figma__bar{
-	height: 100%;
-	width: 40%;
-	position: absolute;
-	background: #6665ee;
-}
-.css__bar{
-	height: 100%;
-	width: 70%;
-	position: absolute;
-	background: #6665ee;
-}
-.java-script__bar{
-	height: 100%;
-	width: 50%;
-	position: absolute;
-	background: #6665ee;
-}
+
 .skills__title{
 font-size: 15px;
 font-weight: 700;
@@ -351,9 +349,11 @@ margin-right: 0;
 	}
 }
 .expertise{
-margin-bottom: 155px;
+/*margin-bottom: 155px;*/
+	padding-bottom: 155px;
 display: flex;
 justify-content: space-between;
+
 }
 @media(max-width: 784px){
 	.expertise{
@@ -361,6 +361,13 @@ justify-content: space-between;
 		text-align: center;
 		align-items: center;
 	}
+}
+.general-background{
+	background-image: url('../img/Design.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
 }
 h3{
 font-size: 16px;
@@ -418,6 +425,12 @@ padding-top: 15px;
 background-image: url("../img/Vector.svg");
 background-repeat: no-repeat;
 background-position: 25% 19%;
+	padding-bottom: 120px;
+}
+@media(max-width: 425px) {
+	.quote{
+		padding-bottom: 0;
+	}
 }
 .quote__text{
 font-weight: 600;
@@ -438,19 +451,19 @@ text-align: center;
 font-weight: 700;
 }
 .info{
-margin-top: 182px;
+margin-top: 62px;
 display: flex;
 justify-content: space-around;
 }
 @media(max-width: 425px){
-	.info{
-		flex-direction: column;
-		text-align: center;
-	}
+   .info{
+       flex-direction: column;
+       text-align: center;
+   }
 
 }
 .info__text__about__edu{
-	font-family: 'Montserrat', 'Arial', sans-serif;
+   font-family: 'Montserrat', 'Arial', sans-serif;
 font-weight: 600;
 font-size: 28px;
 line-height: 27px;
@@ -462,13 +475,13 @@ text-align: left;
 }
 
 @media(max-width: 425px){
-		.info__text__about__edu{
-		text-align: center;
-		padding-top: 50px;
-		margin-bottom: 0px;
-	}
+       .info__text__about__edu{
+       text-align: center;
+       padding-top: 50px;
+       margin-bottom: 0px;
+   }
 .info{
-	margin-top: 13px;
+   margin-top: 13px;
 }
 }
 .education{
@@ -503,8 +516,8 @@ justify-content: space-around;
 flex-wrap: wrap;
 }
 .contact__text{
-	padding-bottom: 10px;
-	text-align: center;
+   padding-bottom: 10px;
+   text-align: center;
 }
 .contact__text__main{
 font-weight: 900;
@@ -514,21 +527,21 @@ color: #FFFFFF;
 margin-bottom: 20px;
 }
 @media(max-width: 992px){
-	.contact__text__main{
-	font-size: 30px;
+   .contact__text__main{
+   font-size: 30px;
 }
 }
 @media(max-width: 435px){
-	.contact__text__main{
-		line-height: 36px;
-	}
+   .contact__text__main{
+       line-height: 36px;
+   }
 }
 
 @media(max-width: 425px){
-	.contact{
-		padding-top: 55px;
-		padding-bottom: 55px;
-	}
+   .contact{
+       padding-top: 55px;
+       padding-bottom: 55px;
+   }
 }
 @media(max-width: 677px){
 
@@ -548,16 +561,15 @@ padding-left: 15px;
 margin-bottom: 7px;
 width: 231px;
 height: 50px;
-font-weight: 600;
 font-size: 15px;
 line-height: 101.5%;
 color: #838383;
 background: rgba(241, 241, 241, 0.1);
 }
 @media(max-width: 994px){
-	.input__style{
+   .input__style{
 width: 131px;
-	}
+   }
 }
 .message{
 margin-bottom: 7px;
@@ -600,19 +612,18 @@ background-color: #222222;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
+}
 
+@media (max-width: 320px) {
+	.footer--flex{
+		display: block;
+		text-align: center;
+	}
 }
-.footer--info{
 
-}
-.footer--links{
-font-size: 15px;
-line-height: 30px;
-color: #CCCCCC;
-cursor: pointer;
-}
+
 .footer--links li:hover{
-	text-decoration: underline;
+   text-decoration: underline;
 }
 .footer--about{
 font-size: 15px;
@@ -620,8 +631,13 @@ line-height: 30px;
 color: #CCCCCC;
 cursor: pointer;
 }
+@media (max-width: 320px) {
+	.footer--about:not(:last-child){
+		padding-bottom: 20px;
+	}
+}
 .footer--about li:hover{
-	text-decoration: underline;
+   text-decoration: underline;
 }
 .footer--mail{
 font-size: 21px;
@@ -630,10 +646,10 @@ text-decoration-line: underline;
 color: #FFFFFF;
 }
 @media(max-width: 465px){
-	.footer--mail{
-		padding-top: 93px;
-		display: block;
-	}
+   .footer--mail{
+       padding-top: 93px;
+       display: block;
+   }
 }
 .address{
 font-weight: 400;
@@ -657,102 +673,125 @@ font-size: 18px;
 line-height: 27px;
 color: #CCCCCC;
 }
+@media (max-width: 320px) {
+	.padding{
+		padding-bottom: 15px;
+	}
+}
+
+@media (max-width: 320px) {
+.rights{
+	flex-direction: column;
+}
+}
 .burger{
-	margin-top: 20px;
-	position: relative;
-	display: none;
-	width: 30px;
-	height: 18px;
-	cursor: pointer;
-	z-index: 5;
+   margin-top: 20px;
+   position: relative;
+   display: none;
+   width: 30px;
+   height: 18px;
+   cursor: pointer;
+   z-index: 5;
 
 }
 @media(max-width: 1202px){
-	.burger{
-	display: block;
-	}
+   .burger{
+   display: block;
+   }
 }
 .burger__part{
-	transition: all 0.3s ease 0s;
-    top: calc(50% - 1px);
-    left: 19%;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: black;
+   transition: all 0.3s ease 0s;
+   top: calc(50% - 1px);
+   left: 19%;
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: black;
 }
 .burger__part:first-child{
-	top: 0px;
+   top: 0px;
 }
 .burger__part:nth-child(3){
-	top: auto;
-	bottom: 0px;
+   top: auto;
+   bottom: 0px;
 }
 
 .menu{
-	padding-left: 10px;
-	position: absolute;
-	top: 10%;
-	left: 80%;
-    opacity: 0;
-    visibility: hidden;
-	flex-direction: column;
-	display: none;
-	background-color: white;
-	transition: all 0.4s ease 0s;
-	border: 1px solid #BC8F8F;
+   padding-left: 10px;
+   position: absolute;
+   top: 10%;
+   left: 80%;
+   opacity: 0;
+   visibility: hidden;
+   flex-direction: column;
+   display: none;
+   background-color: white;
+   transition: all 0.4s ease 0s;
+   border: 1px solid #BC8F8F;
 }
-@media(max-width: 761px){
-	.menu{
-		left: 77%;
-	}
+@media(max-width: 768px){
+   .menu{
+       left: 76%;
+   }
 }
 @media(max-width: 425px){
-	.menu{
-		left: 63%;
-	}
+   .menu{
+       left: 60%;
+   }
 }
 @media(max-width: 375px){
-	.menu{
-		left: 59%;
-	}
+   .menu{
+       left: 56%;
+   }
 }
 @media(max-width: 320px){
-	.menu{
-		left: 52%;
-	}
+   .menu{
+       left: 48%;
+   }
 }
 
 .menu__item{
-	padding: 9px 8px 20px 17px;
-	font-size: 1rem;
+   padding: 9px 8px 20px 26px;
+   font-size: 1rem;
 
 }
 
 .menu__item:nth-child(1){
-	background: url(../img/phone.svg) left center no-repeat;
+   background: url(../img/phone.svg) left 30% no-repeat;
 }
 .menu__item:nth-child(2){
-	background: url(../img/message.svg) left center no-repeat;
+   background: url(../img/message.svg) left 30% no-repeat;
 }
 .menu__item:nth-child(3){
-	background: url(../img/facebook.svg) left center no-repeat;
+   background: url(../img/facebook.svg) left 30% no-repeat;
 }
 .menu__item:nth-child(4){
-	background: url(../img/instagram.svg) left center no-repeat;
+   background: url(../img/instagram.svg) left 30% no-repeat;
 }
 .menu__item:nth-child(5){
-	background: url(../img/twitter.svg) left center no-repeat;
+   background: url(../img/twitter.svg) left 30% no-repeat;
 }
 .menu__item:nth-child(6){
-	background: url(../img/skype.svg) left center no-repeat;
+   background: url(../img/skype.svg) left 30% no-repeat;
 }
 .menu__item:nth-child(7){
-	background: url(../img/linkedin.svg) left center no-repeat;
+   background: url(../img/linkedin.svg) left 30% no-repeat;
 }
 .menu__active{
-	display: flex;
-	opacity: 1;
-    visibility: visible;
+   display: flex;
+   opacity: 1;
+   visibility: visible;
 }
 
+.bg-img{
+   background: url("../img/Clients.jpg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: 100% 100%;
+}
+@media (max-width: 425px) {
+	.bg-img{
+		background-size: contain;
+		background-position: center;
+	}
+}
