@@ -357,9 +357,10 @@ justify-content: space-between;
 }
 @media(max-width: 784px){
 	.expertise{
-		display: block;
+		display: flex;
 		text-align: center;
 		align-items: center;
+		flex-direction: column;
 	}
 }
 .general-background{
