@@ -681,7 +681,7 @@ padding-right: 20px;
 padding-left: 20px;
 padding-bottom: 94px;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 font-size: 18px;
 line-height: 27px;
 color: #CCCCCC;
@@ -689,12 +689,14 @@ color: #CCCCCC;
 @media (max-width: 320px) {
 	.padding{
 		padding-bottom: 15px;
+		text-align: center;
 	}
 }
 
 @media (max-width: 320px) {
 .rights{
 	flex-direction: column;
+	align-items: center;
 }
 }
 .burger{
@@ -806,5 +808,28 @@ color: #CCCCCC;
 	.bg-img{
 		background-size: contain;
 		background-position: center;
+	}
+
+}
+@media (max-width: 566px) {
+	.footer--flex {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		justify-items: center;
+		position: relative;
+		row-gap: 30px;
+	}
+	.footer--info{
+		margin-top: 70px;
+		margin-left: 0;
+		position: absolute;
+		top: 300px;
+	}
+	.next{
+		clear: both;
 	}
 }
