@@ -818,8 +818,7 @@ color: #CCCCCC;
 		grid-template-rows: 1fr 1fr 1fr;
 		justify-content: center;
 		align-content: center;
-		align-items: center;
-		justify-items: center;
+		padding-top: 58px;
 		position: relative;
 		row-gap: 30px;
 	}
