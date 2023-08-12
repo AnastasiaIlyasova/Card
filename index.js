@@ -78,5 +78,13 @@ move();
 let burgerClick = document.getElementById("burger-click")
 let menuAdaptive = document.getElementById("menu-adaptive")
 burgerClick.addEventListener('click', function(e){
-  menuAdaptive.classList.toggle('menu__active')
+    menuAdaptive.classList.toggle('menu__active')
+})
+
+//Close burger
+
+window.addEventListener('click', function(e){
+    if (e.target === menuAdaptive){
+        menuAdaptive.style.display = 'none'
+    }
 })
