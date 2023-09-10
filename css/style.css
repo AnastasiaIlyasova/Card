@@ -295,7 +295,7 @@ color: #333333;
 }
 .grid__body{
 margin-top: 117px;
-margin-bottom: 196px;
+margin-bottom: 117px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-column-gap: 33px;
