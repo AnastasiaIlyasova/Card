@@ -380,10 +380,10 @@ font-weight: 400;
 margin-top: 70px;
 }
 .contact{
-margin-top: 170px;
-padding-top: 225px;
+margin-top: 65px;
+padding-top: 100px;
 background-color: #222222;
-padding-bottom: 143px;
+padding-bottom: 100px;
 }
 .contact__flex{
 display: flex;
@@ -494,13 +494,16 @@ color: #CCCCCC;
 .flex--links{
 margin-top: 20px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
+}
+.flex--links a:not(:last-child){
+	margin-right: 30px;
 }
 .rights{
-margin-top: 123px;
+margin-top: 60px;
 padding-right: 20px;
 padding-left: 20px;
-padding-bottom: 94px;
+padding-bottom:35px;
 display: flex;
 justify-content: space-around;
 font-size: 18px;
@@ -676,8 +679,7 @@ color: #CCCCCC;
 		grid-area: footer;
 	}
 	.footer--info{
-		margin-left: 56px;
-		margin-top: 70px;
+		text-align: center;
 	}
 }
 @media (max-width: 480px) {
