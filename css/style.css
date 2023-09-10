@@ -537,7 +537,7 @@ color: #CCCCCC;
 .menu{
    padding-left: 10px;
    position: absolute;
-   top: 10%;
+   top: 8%;
 	right: 5%;
    opacity: 0;
    visibility: hidden;
@@ -549,7 +549,7 @@ color: #CCCCCC;
 }
 
 .menu__item{
-   padding: 9px 8px 20px 26px;
+   padding: 9px 8px 6px 26px;
    font-size: 1rem;
 }
 
@@ -591,23 +591,7 @@ color: #CCCCCC;
 		grid-template-columns: 1fr 1fr;
 	}
 }
-@media(max-width: 1202px){
-	.adaptive{
-		display: none;
-	}
-	.flex_second-item{
-		display: none;
-	}
-	.burger{
-		display: block;
-	}
-}
-@media(max-width: 1075px){
-	.grid__body{
-		grid-template-columns: 1fr;
-	}
-}
-@media(max-width: 995px){
+@media (max-width: 1200px) {
 	.advantages{
 		font-size: 1.5rem;
 	}
@@ -626,13 +610,25 @@ color: #CCCCCC;
 	.input__style{
 		width: 131px;
 	}
+	.grid__body{
+		grid-template-columns: 1fr;
+	}
+	.adaptive{
+		display: none;
+	}
+	.flex_second-item{
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
 }
-@media(max-width: 850px){
+@media (max-width: 1024px) {
 	.nums{
 		font-size: 13rem;
 	}
 }
-@media(max-width: 728px){
+@media (max-width: 768px) {
 	.flex__info{
 		display: block;
 		text-align: center;
@@ -655,8 +651,6 @@ color: #CCCCCC;
 		align-items: center;
 		flex-direction: column;
 	}
-}
-@media (max-width: 566px) {
 	.flex_first-item{
 		display: block;
 	}
@@ -686,12 +680,10 @@ color: #CCCCCC;
 		margin-top: 70px;
 	}
 }
-@media(max-width: 465px){
+@media (max-width: 480px) {
 	.footer--mail{
 		display: block;
 	}
-}
-@media (max-width: 425px) {
 	.contact__text__main{
 		line-height: 36px;
 	}
@@ -704,7 +696,7 @@ color: #CCCCCC;
 		grid-template-columns: 160px 100px;
 		justify-content: start;
 		align-content: center;
-		padding-top: 58px;
+		padding-top: 0;
 		row-gap: 30px;
 		text-align: left;
 	}
@@ -727,19 +719,9 @@ color: #CCCCCC;
 	}
 	.footer--info{
 		margin-left: 0;
-		margin-top: 70px;
+		margin-top: 0;
 	}
-}
-@media(max-width: 370px){
-	.advantages{
-		font-size: 2rem;
-		text-align: center;
-	}
-}
-@media (max-width: 320px) {
-	.footer--info {
-		margin-left: 13px;
-	}
+
 	.padding{
 		padding-bottom: 15px;
 		text-align: center;
@@ -747,6 +729,7 @@ color: #CCCCCC;
 	.rights{
 		flex-direction: column;
 		align-items: center;
+		margin-top: 45px;
 	}
 	.footer--about:not(:last-child){
 		padding-bottom: 20px;
@@ -764,5 +747,12 @@ color: #CCCCCC;
 	}
 	.skills__bar{
 		width: 66vw;
+	}
+	.advantages{
+		font-size: 2rem;
+		text-align: center;
+	}
+	.contact{
+		margin-top: 34px;
 	}
 }
