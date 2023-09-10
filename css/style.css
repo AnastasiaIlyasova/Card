@@ -681,6 +681,9 @@ color: #CCCCCC;
 	.footer--info{
 		text-align: center;
 	}
+	.contact{
+		margin-top: 0;
+	}
 }
 @media (max-width: 480px) {
 	.footer--mail{
@@ -754,7 +757,5 @@ color: #CCCCCC;
 		font-size: 2rem;
 		text-align: center;
 	}
-	.contact{
-		margin-top: 34px;
-	}
+
 }
